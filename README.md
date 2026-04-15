@@ -368,4 +368,107 @@ plt.figure()
 sns.heatmap(data)
 plt.title("Login Activity Heatmap")
 plt.show()
+
+Here are the algorithms for each of your Python programs, broken down into logical steps.
+## **1. Swapping & Number Check**
+ 1. **Start**
+ 2. **Input:** Accept two numbers, num1 and num2.
+ 3. **Process (Swap):**
+   * Store the value of num1 in a temporary variable (temp).
+   * Assign the value of num2 to num1.
+   * Assign the value of temp to num2.
+ 4. **Output:** Display the swapped values of num1 and num2.
+ 5. **Decision:** * If num1 > 0, output "Positive".
+   * Else if num1 < 0, output "Negative".
+   * Else, output "Zero".
+ 6. **Stop**
+## **2. Simple Calculator**
+ 1. **Start**
+ 2. **Display:** Show the menu of operations (1. Add, 2. Sub, 3. Mul, 4. Div).
+ 3. **Input:** Accept two numbers and an operation choice (1–4).
+ 4. **Decision (Operations):**
+   * If choice is 1: Calculate num1 + num2.
+   * If choice is 2: Calculate num1 - num2.
+   * If choice is 3: Calculate num1 * num2.
+   * If choice is 4:
+     * Check if num2 is not zero. If true, calculate num1 / num2.
+     * If num2 is zero, output an error message.
+ 5. **Output:** Display the result of the calculation.
+ 6. **Stop**
+## **3. Factorial & Fibonacci (Recursion)**
+**Factorial Algorithm:**
+ 1. **Define Function:** If n is 0 or 1, return 1 (**Base Case**).
+ 2. Otherwise, return n * factorial(n - 1) (**Recursive Step**).
+ 3. **Input:** Accept a number and call the function.
+**Fibonacci Algorithm:**
+ 1. **Define Function:** * If n is 0, return 0.
+   * If n is 1, return 1.
+   * Otherwise, return fib(n-1) + fib(n-2).
+ 2. **Loop:** Iterate from 0 to the desired number of terms and call the function for each index.
+## **4. GUI with Tkinter**
+ 1. **Start**
+ 2. **Initialize:** Create the main application window and set dimensions.
+ 3. **Create Widgets:** Add a label (instruction), an entry box (input), and a button (action).
+ 4. **Define Event:** Create a function that:
+   * Retrieves text from the entry box.
+   * Updates a display label with a "Hello" greeting.
+ 5. **Main Loop:** Run the application to keep the window open and listen for button clicks.
+ 6. **Stop**
+## **5. Exception Handling**
+ 1. **Start**
+ 2. **Try Block:**
+   * Input two integers.
+   * Attempt to divide the first by the second.
+ 3. **Except Block:**
+   * If the user enters text instead of numbers, catch ValueError.
+   * If the second number is zero, catch ZeroDivisionError.
+ 4. **Else Block:** If no errors occur, display the division result.
+ 5. **Finally Block:** Always print "Program execution completed."
+ 6. **Stop**
+## **6. NLTK (NLP Processing)**
+ 1. **Start**
+ 2. **Setup:** Download necessary NLTK datasets (punkt, wordnet).
+ 3. **Tokenization:** Break the input sentence into individual words/tokens.
+ 4. **Stemming:** Strip suffixes from words to get the root form (e.g., "learning" becomes "learn").
+ 5. **Lemmatization:** Convert words to their dictionary base form using context.
+ 6. **Sentiment Analysis:** Use the VADER tool to calculate positive, negative, and neutral scores.
+ 7. **Output:** Display the tokens, stems, lemmas, and sentiment scores.
+ 8. **Stop**
+## **7. Web Scraper (BeautifulSoup & Selenium)**
+**BeautifulSoup (Static):**
+ 1. **Request:** Send an HTTP GET request to the URL.
+ 2. **Parse:** Convert the raw HTML into a searchable "soup" object.
+ 3. **Extract:** Find the <title> tag and print its text.
+**Selenium (Dynamic):**
+ 1. **Initialize:** Open a web browser via a driver (e.g., Chrome).
+ 2. **Navigate:** Go to the specific URL and wait for the page to load.
+ 3. **Locate:** Find an element (e.g., h1) using the DOM structure.
+ 4. **Close:** Print the element text and shut down the browser.
+## **8. Packet Sniffing (Scapy)**
+ 1. **Start**
+ 2. **Define Callback:** Create a function to process every captured packet.
+ 3. **Filter:** Within the function, check if the packet has an **IP layer**.
+ 4. **Extract:** Read the Source IP and Destination IP from the packet header.
+ 5. **Sniff:** Start the capture process for a specific count (e.g., 5 packets).
+ 6. **Stop**
+## **9. Hashing & Integrity**
+ 1. **Input:** Accept a string or read a file as binary data.
+ 2. **Compute:** Pass the data through the **SHA-256** algorithm.
+ 3. **Hexdigest:** Convert the binary hash into a readable hexadecimal string.
+ 4. **Verification:**
+   * Re-calculate the hash of the current data.
+   * Compare the new hash with the original stored hash.
+   * If they match, the file is unchanged (Integrity verified).
+ 5. **Stop**
+## **10. Data Visualization (Matplotlib & Seaborn)**
+ 1. **Start**
+ 2. **Data Prep:** Define lists or numpy arrays for X and Y axes.
+ 3. **Line Plot:** Connect data points with a line to show trends over time.
+ 4. **Bar Chart:** Use rectangular bars to compare categories.
+ 5. **Histogram:** Group numerical data into "bins" to show distribution frequency.
+ 6. **Scatter Plot:** Plot individual points to see the correlation between variables.
+ 7. **Heatmap:** Use a color-coded matrix to represent data intensity.
+ 8. **Render:** Use plt.show() to display all generated graphs.
+ 9. **Stop**
+
 ```
