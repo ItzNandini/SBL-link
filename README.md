@@ -1,5 +1,4 @@
 ```SBL
-https://ajgar.edgeone.app/
 1.swap
 # Input two numbers
 num1 = int(input("Enter first number: "))
